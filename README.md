@@ -1,8 +1,7 @@
-Este projeto apresenta diferentes implementações da Sequência de Fibonacci, usando abordagens variadas para fins educacionais:
+Este projeto apresenta diferentes implementações da Sequência de Fibonacci.
 
-✅ Versão em C com estrutura monolítica usando comandos goto.
-
-🐍 Versão em Python usando uma estrutura iterativa(recalcula cada termo do zero).
+ Versão em C com estrutura monolítica usando comandos goto.
+ Versão em Python usando uma estrutura iterativa(recalcula cada termo do zero).
 
 Estudar e comparar abordagens de programação imperativa.
 Aplicar estruturas de controle básicas (goto, while, for).
