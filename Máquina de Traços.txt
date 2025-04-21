@@ -1,0 +1,88 @@
+F: escreva("Erro")
+G: declaração de variáveis (a = 0; b = 1; i = 0)
+H: escreva(a)
+I: atualização das variáveis (c = b; b = a + b; a = c; i = i + 1)
+
+T1: n <= 0
+T2: i < n
+
+----------------------------------------------------------------------------------
+
+Monolítico (P1):
+
+R1: se T1 vá_para R2 senão vá_para R3
+R2: faça F vá_para R7
+R3: faça G vá_para R4
+R4: se T2 vá_para R5 senão vá_para R7
+R5: faça H vá_para R6
+R6: faça I vá_para R4
+R7: parada
+
+
+ENTRADA: n = 3
+
+(1, ε)(3, ε)(4, G)
+(5, G)(6, GH)(4, GHI)
+(5, GHI)(6, GHIH)(4, GHIHI)
+(5, GHIHI)(6, GHIHIH)(4, GHIHIHI)
+(7, GHIHIHI)
+
+πY(GHIHIHI) = GHIHIHI e <P1, M>(ε) = GHIHIHI
+
+----------------------------------------------------------------------------------
+
+Iterativo (P2):
+
+se (T1) faça
+    F;
+senão faça
+    G;
+    enquanto(T2) faça
+        H;
+        I;
+    fim enquanto;
+fim se;
+
+
+ENTRADA: n = 3
+
+(1, ε)(3, ε)(4, G)
+(5, G)(6, GH)(4, GHI)
+(5, GHI)(6, GHIH)(4, GHIHI)
+(5, GHIHI)(6, GHIHIH)(4, GHIHIHI)
+(7, GHIHIHI)
+
+πY(GHIHIHI) = GHIHIHI e <P2, M>(ε) = GHIHIHI
+
+----------------------------------------------------------------------------------
+
+Recursivo (P3):
+
+# P é R; S; T onde:
+
+#   R def (se T1 então (F; ✓) senão G; S)
+#   S def (se T2 então T senão H; ✓)
+#   T def (I; S)
+
+
+ENTRADA: n = 3
+
+(1, ε)(3, ε)(4, G)
+(5, G)(4, GI)
+(5, GI)(4, GII)
+(5, GII)(4, GIII)
+(7, GIII)(8, GIIIH)
+
+πY(GIIIH) = GIIIH e <P3, M>(ε) = GIIIH
+
+----------------------------------------------------------------------------------
+
+Equivalência:
+
+<P1, M>(ε) = GHIHIHI
+<P2, M>(ε) = GHIHIHI
+<P3, M>(ε) = GIIIH
+
+<P1, M>(ε) = <P2, M>(ε) != <P3, M>(ε)
+
+Os programas monolítico e iterativo são equivalentes, mas não o programa recursivo
