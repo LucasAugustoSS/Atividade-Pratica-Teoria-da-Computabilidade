@@ -13,5 +13,5 @@ As três versões são comparadas por meio do método de máquina de traços par
 - Monolitico.c: Programa monolítico em C e em pseudocódigo na forma de comentário.
 - Iterativo.py: Programa iterativo em Python e em pseudocódigo na forma de comentário.
 - Recursivo.py: Programa recursivo em Python e em pseudocódigo na forma de comentário.
-- Máquina de Traços.txt: Contém a máquina de traços e a equivalência entre os três programas.
+- Máquina de Traços.txt: Máquina de traços e equivalência entre os três programas.
 - README.md: Documentação do projeto.
