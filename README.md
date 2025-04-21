@@ -1,11 +1,17 @@
+# Projeto
+
 Este projeto apresenta diferentes implementações da Sequência de Fibonacci.
 
- Versão em C com estrutura monolítica usando comandos goto.
- Versão em Python usando uma estrutura iterativa(recalcula cada termo do zero).
+- Versão em C usando estrutura monolítica.
+- Versão em Python usando uma estrutura iterativa.
+- Versão em Python usando uma estrutura recursiva.
 
-Estudar e comparar abordagens de programação imperativa.
-Aplicar estruturas de controle básicas (goto, while, for).
-📂 Conteúdo do Projeto
-fibonacci_c_monolitico.c: Código em C estruturado com goto, simulando uma máquina de estados.
-fibonacci_iterativo.py: Versão em Python com estrutura iterativa e simples.
-README.md: Documentação do projeto.
+As três versões são comparadas por meio do método de máquina de traços para verificar sua equivalência.
+
+# Arquivos
+
+- Monolitico.c: Programa monolítico em C e em pseudocódigo na forma de comentário.
+- Iterativo.py: Programa iterativo em Python e em pseudocódigo na forma de comentário.
+- Recursivo.py: Programa recursivo em Python e em pseudocódigo na forma de comentário.
+- Máquina de Traços.txt: Contém a máquina de traços e a equivalência entre os três programas.
+- README.md: Documentação do projeto.
