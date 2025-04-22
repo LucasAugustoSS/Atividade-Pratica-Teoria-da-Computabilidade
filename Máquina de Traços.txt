@@ -27,7 +27,7 @@ ENTRADA: n = 3
 (5, GHIHI)(6, GHIHIH)(4, GHIHIHI)
 (7, GHIHIHI)
 
-πY(GHIHIHI) = GHIHIHI e <P1, M>(ε) = GHIHIHI
+πY(GHIHIHI) = GHIHIHI e <P1, M>(3) = GHIHIHI
 
 ----------------------------------------------------------------------------------
 
@@ -52,7 +52,7 @@ ENTRADA: n = 3
 (5, GHIHI)(6, GHIHIH)(4, GHIHIHI)
 (7, GHIHIHI)
 
-πY(GHIHIHI) = GHIHIHI e <P2, M>(ε) = GHIHIHI
+πY(GHIHIHI) = GHIHIHI e <P2, M>(3) = GHIHIHI
 
 ----------------------------------------------------------------------------------
 
@@ -73,16 +73,16 @@ ENTRADA: n = 3
 (5, GII)(4, GIII)
 (7, GIII)(8, GIIIH)
 
-πY(GIIIH) = GIIIH e <P3, M>(ε) = GIIIH
+πY(GIIIH) = GIIIH e <P3, M>(3) = GIIIH
 
 ----------------------------------------------------------------------------------
 
 Equivalência:
 
-<P1, M>(ε) = GHIHIHI
-<P2, M>(ε) = GHIHIHI
-<P3, M>(ε) = GIIIH
+<P1, M>(3) = GHIHIHI
+<P2, M>(3) = GHIHIHI
+<P3, M>(3) = GIIIH
 
-<P1, M>(ε) = <P2, M>(ε) != <P3, M>(ε)
+<P1, M>(3) = <P2, M>(3) != <P3, M>(3)
 
 Os programas monolítico e iterativo são equivalentes, mas não o programa recursivo
